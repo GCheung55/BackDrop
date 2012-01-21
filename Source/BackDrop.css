@@ -1,0 +1,35 @@
+#backDrop {
+    background: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    visibility: hidden;
+    width: 100%;
+    z-index: 5999;
+}
+#backDrop.load {
+    display: none;
+}
+#backDrop.visible {
+    opacity: .5;
+    visibility: visible;
+}
+.bd_visible {
+    opacity: .5;
+    visibility: visible;
+}
+#backDrop.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.bd_hidden {
+    opacity: 0;
+    visibility: hidden;
+}
